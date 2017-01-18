@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/name"
+        android:layout_below="@+id/et_name"
+        android:layout_marginTop="20dp"
+        android:text="Date: " />
+
+    <TextView
+        android:id="@+id/tv_loca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_date"
+        android:layout_below="@+id/et_date"
+        android:layout_marginTop="28dp"
+        android:text="Location" />
+
+    <EditText
+        android:id="@+id/et_loc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_loca"
+        android:layout_alignBottom="@+id/tv_loca"
+        android:layout_alignStart="@+id/et_date"
+        android:ems="10"
+
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/et_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_date"
+        android:layout_alignBottom="@+id/tv_date"
+        android:layout_alignStart="@+id/et_name"
+        android:ems="10"
+        android:inputType="date" />
+
+    <TextView
+        android:id="@+id/tvmesa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_desc"
+        android:layout_below="@+id/et_loc"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="15dp"
+        android:text="No of \nMeasures : " />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="24dp"
+        android:text="Name: " />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/name"
+        android:layout_alignBottom="@+id/name"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/tv_loca"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/et_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvmesa"
+        android:layout_alignBottom="@+id/tvmesa"
+        android:layout_toEndOf="@+id/tvmesa"
+        android:ems="10"
+        android:inputType="number"
+        android:paddingBottom="15dp" />
+
+    <EditText
+        android:id="@+id/et_decsr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvmesa"
+
+        android:layout_toEndOf="@+id/tvmesa"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_decsr"
+        android:layout_alignBottom="@+id/et_decsr"
+        android:layout_toStartOf="@+id/et_loc"
+        android:text="Desription: " />
+
+</RelativeLayout>
